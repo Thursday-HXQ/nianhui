@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '@/components/Main'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
+  routes: [{
+      path: "/",
+      redirect: "/enter"
+    },
     {
-      path: '/',
-      name: 'Main',
-      component: Main
+      path: '/enter',
+      name: 'Enter',
+      component: () => import('../pages/Enter/Enter.vue')
+    },
+    {
+      path: '/camera',
+      name: 'Camera',
+      component: () => import('../pages/Camera/Camera.vue')
     }
   ]
 })
