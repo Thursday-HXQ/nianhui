@@ -117,29 +117,34 @@ export default {
   width:100%;
   height:50%;
   /* border:1px solid #000; */
+  box-sizing: border-box;
 }
 .bottom-animate-pic-wra{
   width:100%;
   height:50%;
   position: relative;
+  bottom:0;
   overflow: hidden;
   z-index: 99;
+  box-sizing: border-box;
 }
 .list{
   width:100%;
   height:100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .item{
   width:300px;
   height:100%;
   display: inline-block;
   position:relative;
+  overflow: hidden;
 }
 .person{
   width:100%;
-  height:100%;
+  height:95%;
   background-image: url(../../assets/person-bg.png);
   background-size:100% 100%;
   position:absolute;
@@ -153,7 +158,8 @@ export default {
   flex-direction: column;
   align-items: center;
   padding-top:50px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  overflow: hidden;
 }
 .headPic{
   width:40%;
